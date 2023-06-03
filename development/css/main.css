@@ -3,3 +3,15 @@
 
 @import 'abstract/global.css';
 @import 'layout/grid.css';
+
+@import 'section/header.css';
+
+
+body{
+    min-height:3000px;
+    background-color: #fafafa;
+
+    *{
+        border: 1px dashed rgba(38,38,38,0.38);
+    }
+}

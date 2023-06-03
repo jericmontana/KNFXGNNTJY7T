@@ -1,0 +1,21 @@
+@import '../util/device.css';
+.header-wrapper{
+    width: 100%;
+    position: relative;
+    transition: transform var(--duration-short) ease-in-out;
+    box-shadow: 0px 2px 8px -5px rgba(0, 0, 0, 0.75) ;
+}
+
+.site-header-sticky.header-wrapper {
+    position: sticky;
+    transform: translateY(0%);
+    top: 0%;
+    left: 0%;
+    z-index: 10;
+    background-color: #fff;
+}
+
+.site-header-hidden.header-wrapper {
+    transform: translateY(-100%);
+}
+

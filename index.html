@@ -7,71 +7,12 @@
     <title>Vite App</title>
   </head>
   <body>
-    <div id="main">
-      <div class="page-width">
-          <div class="grid grid--1-col grid--3-col-desktop grid--2-col-tablet">
-              <div class="grid__item">
-                  <div class="grid grid--2-col grid--5-col-desktop grid--3-col-tablet">
-                      <div class="grid__item">Nested</div>
-                      <div class="grid__item">Nested</div>
-                      <div class="grid__item">Nested</div>
-                      <div class="grid__item">Nested</div>
-                      <div class="grid__item">Nested</div>
-                      <div class="grid__item">Nested</div>
-                      <div class="grid__item">Nested</div>
-                      <div class="grid__item">Nested</div>
-                      <div class="grid__item">Nested</div>
-                      <div class="grid__item">Nested</div>
-                  </div>
-              </div>
-              <div class="grid__item">
-                  <div class="grid grid--2-col grid--4-col-tablet grid--gapless">
-                      <div class="grid__item">Nested 2 Gapless</div>
-                      <div class="grid__item">Nested 2 Gapless</div>
-                      <div class="grid__item">Nested 2 Gapless</div>
-                      <div class="grid__item">Nested 2 Gapless</div>
-                      <div class="grid__item">Nested 2 Gapless</div>
-                      <div class="grid__item">Nested 2 Gapless</div>
-                      <div class="grid__item">Nested 2 Gapless</div>
-                  </div>
-                  <div class="grid grid--3-col grid--gapless">
-                      <div class="grid__item">Nested 3 Gapless</div>
-                      <div class="grid__item">Nested 3 Gapless</div>
-                      <div class="grid__item">Nested 3 Gapless</div>
-                      <div class="grid__item">Nested 3 Gapless</div>
-                  </div>
-              </div>
-              <div class="grid__item">sdss</div>
-              <div class="grid__item">
-                  <div class="grid grid--2-col grid--4-col-desktop grid--3-col-tablet">
-                      <div class="grid__item">Nested 3</div>
-                      <div class="grid__item">Nested 3</div>
-                      <div class="grid__item">Nested 3</div>
-                      <div class="grid__item">Nested 3</div>
-                      <div class="grid__item">Nested 3</div>
-                      <div class="grid__item">Nested 3</div>
-                      <div class="grid__item">Nested 3</div>
-                  </div>
-              </div>
-              <div class="grid__item"></div>
-              <div class="grid__item"></div>
-              <div class="grid__item">
-                  <div class="grid grid--3-col grid--gapless">
-                      <div class="grid__item">Nested Gapless</div>
-                      <div class="grid__item">Nested Gapless</div>
-                      <div class="grid__item">Nested Gapless</div>
-                      <div class="grid__item">Nested Gapless</div>
-                      <div class="grid__item">Nested Gapless</div>
-                      <div class="grid__item">Nested Gapless</div>
-                  </div>
-              </div>
-              <div class="grid__item"></div>
-              <div class="grid__item"></div>
-              <div class="grid__item"></div>
-              <div class="grid__item"></div>
-          </div>
-      </div>
-    </div>
+    <sticky-header class="header-wrapper">
+      <header class="header">
+        <div>header</div>
+      </header>
+    </sticky-header>
+    <main id="MainContent" role="main" tabindex="-1"></main>
     <script type="module" src="/main.js"></script>
   </body>
 </html>

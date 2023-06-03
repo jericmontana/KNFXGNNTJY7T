@@ -1,5 +1,4 @@
-import { sampleFunction } from './development/js/sample'
+import { main } from './development/js/main'
 import './main.css'
 
-
-sampleFunction();
+main()
