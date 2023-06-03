@@ -39,3 +39,34 @@
     font-weight: 700;
     font-display: swap;
 }
+
+/* Montserrat */
+@font-face {
+    font-family: 'Montserrat';
+    src: url(Montserrat-Regular.ttf);
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Montserrat';
+    src: url(Montserrat-Medium.ttf);
+    font-style: normal;
+    font-weight: 500;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Montserrat';
+    src: url(Montserrat-SemiBold.ttf);
+    font-style: normal;
+    font-weight: 600;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url(Montserrat-Bold.ttf);
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+}
