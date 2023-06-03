@@ -66,4 +66,36 @@ export function main(){
     }
 
     customElements.define('header-drawer', HeaderDrawer);
+
+    class LazyImageHTML extends HTMLElement {
+        constructor() {
+            super();
+        
+            this.image = this.querySelector('img');
+            if (this.image) {
+            this.handleLazy();
+        
+            const observer = new MutationObserver((changes) => {
+                changes.forEach((change) => {
+                if (change.attributeName.includes('src') || change.attributeName.includes('srcset')){
+                    this.handleLazy();
+                }
+                });
+            });
+            observer.observe(this.image, {attributes : true});
+            }
+        }
+        
+        handleLazy () {
+            if (!this.image.complete) {
+            this.classList.add('loading');
+        
+            this.image.addEventListener('load', () => {
+                this.classList.remove('loading');
+            }, false);
+            }
+        }
+    }
+    
+    customElements.define('clazy-image', LazyImageHTML); 
 }
