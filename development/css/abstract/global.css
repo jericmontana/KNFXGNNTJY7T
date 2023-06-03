@@ -187,9 +187,16 @@ h6,
     padding: 0 1.5rem;
 }
 
+.page-width.page-width--no-padding {
+    padding: 0 0;
+}
+
 @media --tablet-up {
     .page-width {
         padding: 0 5rem;
+    }
+    .page-width.page-width--no-padding {
+        padding: 0 0;
     }
 }
 

@@ -1,0 +1,116 @@
+@import '../util/device.css';
+
+:root{
+    --border-weight: 2px;
+    --btn-border-color: 255,255,255;
+    --btn-bg-color: 255,255,255;
+    --btn-lbl-color: 0,0,0;
+
+    --border-radius-btn: 4px;
+
+    --btn-hover-change-color: 57,110,92; 
+}
+
+
+.btn{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    span{
+        width: 100%;
+    }
+}
+
+.btn--primary{
+    border: var(--border-weight) solid rgb(var(--btn-border-color));
+    background-color: rgb(var(--btn-bg-color));
+    
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+    span{
+        color: rgb(var(--btn-lbl-color));
+    }
+}
+
+.btn-size--hero{
+    width: 100%;
+    max-width: 300px;
+    height: 74px;
+
+    margin-left: auto;
+    margin-right: auto;
+    padding: 15px 30px;
+
+    span{
+        font-weight: 600;
+        font-size: 36px;
+        line-height: 44px;
+        text-transform: uppercase;
+    }
+
+    @media --mobile{
+        &{
+            max-width: 220px;
+            height: 45px;
+
+            padding: 15px 15px;
+
+            span{
+                font-size: 25px;
+                line-height: 40px;
+            }
+        }
+    }
+}
+
+.btn-size--default{
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 2px 12px;
+
+    @media --mobile{
+        &{
+            font-size: 12px;
+            padding: 5px 8px 2px 8px;
+        }
+    }
+}
+
+.btn-he--lighten.btn--primary{
+
+    &:hover{
+        transition: all 0.8s ease;
+        &{
+            border: var(--border-weight) solid rgba(var(--btn-border-color),0.75);
+            background-color: rgba(var(--btn-bg-color),0.75);
+            color: rgb(var(--btn-lbl-color));
+        }
+    }
+}
+
+.btn-he--colorswitch{
+
+    &:hover{
+        transition: all 0.2s ease;
+        &{
+            border: var(--border-weight) solid rgb(var(--btn-bg-color));
+            background-color: rgb(var(--btn-lb-color));
+        }
+    }
+
+    &:hover{
+        & span{
+            color: rgb(var(--btn-bg-color));
+        }
+    }
+}
+
+
+.btn-corner--round{
+    border-radius: var(--border-radius-btn);
+}
+

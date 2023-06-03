@@ -50,4 +50,7 @@
     --spacing-sections-desktop: 32px;
     --spacing-sections-mobile: calc(var(--spacing-sections-desktop) * 70 / 100);
 
+    /* Loader */
+    --color-lazy-loader: 0, 0, 0;
+
 }

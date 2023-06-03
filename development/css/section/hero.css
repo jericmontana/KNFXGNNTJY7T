@@ -1,0 +1,67 @@
+#section--hero{
+   
+    .section__image{
+        position: absolute;
+        display: block !important;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        width: 100%;
+        z-index: 0;
+
+        .image-ratio__container{
+            .image-ratio{
+                &::before {
+                    padding-bottom: min(900px, 90vh);
+                }
+            }
+
+            @media --mobile{
+                .image-ratio{
+                    &::before {
+                        padding-bottom: 100vh;
+                    }
+                }
+            }
+        }
+    }
+
+    .section__content{
+        .image-ratio__container{
+            .image-ratio{
+                &::before {
+                    padding-bottom: 69.25%;
+                }
+            }
+        }
+    }
+
+    .section-content__image{
+        width: 100%;
+        max-width: 730px;
+        margin-left: auto;
+        margin-right: auto;
+
+        @media --mobile{
+            &{
+                max-width: 55vw;
+                margin-right: 0;
+            }
+        }
+    }
+
+    .section-content__cta{
+        @media --mobile{
+            &{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-left: auto;
+                margin-right: 0;
+
+                max-width: 55vw;
+            }
+        }
+    }
+}
