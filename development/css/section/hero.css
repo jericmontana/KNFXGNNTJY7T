@@ -20,7 +20,7 @@
             @media --mobile{
                 .image-ratio{
                     &::before {
-                        padding-bottom: 100vh;
+                        padding-bottom: min(550px, 90vh);
                     }
                 }
             }
@@ -28,6 +28,13 @@
     }
 
     .section__content{
+        @media --mobile{
+            &{
+                padding-top: 20px;
+                padding-right: 15px;
+            }
+        }
+        
         .image-ratio__container{
             .image-ratio{
                 &::before {
@@ -45,7 +52,7 @@
 
         @media --mobile{
             &{
-                max-width: 55vw;
+                max-width: 70vw;
                 margin-right: 0;
             }
         }
@@ -60,7 +67,7 @@
                 margin-left: auto;
                 margin-right: 0;
 
-                max-width: 55vw;
+                max-width: 70vw;
             }
         }
     }
