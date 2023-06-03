@@ -1,0 +1,44 @@
+@import '../util/device.css';
+#section--instafeed{
+    
+    .grid-item-wrapper{
+        padding: 15px;
+        position: relative;
+
+        @media --mobile-tablet{
+            &{
+                padding: 5px;
+            }
+        }
+
+        a{
+            position: absolute;
+            display: block !important;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+        }
+
+        
+
+        
+    }
+
+    .section__cta{
+        margin-top: 20px;
+        width: 100%;
+        padding: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .btn.btn-size--default{
+            @media --mobile{
+                &{
+                    max-width: max-content;
+                }
+            }
+        }
+    }
+}
