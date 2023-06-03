@@ -1,0 +1,41 @@
+/*==================== FONTS ====================*/
+
+/* Primary Fonts */
+@font-face {
+    font-family: 'Poppins';
+    src: url(Poppins-Regular.woff2);
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Poppins';
+    src: url(Poppins-Medium.woff2);
+    font-style: normal;
+    font-weight: 500;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Poppins';
+    src: url(Poppins-SemiBold.woff2);
+    font-style: normal;
+    font-weight: 600;
+    font-display: swap;
+}
+
+/* Secondary Fonts */
+@font-face {
+    font-family: 'PTSerif';
+    src: url(PTSerif-Regular.woff2);
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'PTSerif';
+    src: url(PTSerif-Bold.woff2);
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+}
