@@ -47,7 +47,7 @@ header.header{
         flex-wrap: nowrap;
     }
 
-    .header_menu-list--item{
+    .header__menu-list--item{
         font-size: 14px;
         line-height: 17px;
 
@@ -169,7 +169,7 @@ header.header{
             flex-direction: column;
         }
 
-        .header_menu-list--item {
+        .header__menu-list--item {
             &:not(:first-child){
                 padding-top: 20px;
             }

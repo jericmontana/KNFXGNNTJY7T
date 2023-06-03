@@ -7,11 +7,15 @@
 @import 'section/header.css';
 
 
-/* body{
+
+@import 'section/footer.css';
+
+
+main{
     min-height:3000px;
     background-color: #fafafa;
 
     *{
         border: 1px dashed rgba(38,38,38,0.38);
     }
-} */
+}

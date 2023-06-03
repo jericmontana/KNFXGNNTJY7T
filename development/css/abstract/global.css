@@ -271,3 +271,28 @@ summary {
 summary::-webkit-details-marker {
   display: none;
 }
+
+
+/* Section */
+
+.section + .section {
+    margin-top: var(--spacing-sections-mobile);
+}
+  
+@media --tablet-up {
+    .section + .section {
+        margin-top: var(--spacing-sections-desktop);
+    }
+}
+
+.section{
+    padding-top: var(--spacing-sections-mobile);
+    padding-bottom: var(--spacing-sections-mobile);
+}
+
+@media --tablet-up {
+    .section{
+        padding-top: var(--spacing-sections-desktop);
+        padding-bottom: var(--spacing-sections-desktop);
+    }
+}

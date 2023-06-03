@@ -44,4 +44,9 @@
     --grid-desktop-horizontal-spacing: 8px;
     --grid-mobile-vertical-spacing: 4px;
     --grid-mobile-horizontal-spacing: 4px;
+
+    /* Section Spacing */
+    --spacing-sections-desktop: 32px;
+    --spacing-sections-mobile: calc(var(--spacing-sections-desktop) * 70 / 100);
+
 }
