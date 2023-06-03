@@ -97,5 +97,5 @@ export function main(){
         }
     }
     
-    customElements.define('clazy-image', LazyImageHTML); 
+    customElements.define('lazy-image', LazyImageHTML); 
 }

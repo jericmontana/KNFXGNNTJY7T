@@ -1,0 +1,109 @@
+@import '../util/device.css';
+#section--collectionlist{
+    .image-ratio__container{
+        .image-ratio{
+            &::before {
+                padding-bottom: 133.33%;
+            }
+        }
+    }
+
+    .grid{
+        width: 100%;
+        max-width: calc(280px * 4);
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .grid-item-wrapper{
+        padding: 15px;
+        position: relative;
+
+        a{
+            position: absolute;
+            display: block !important;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+        }
+
+        h3{
+            width: 100%;
+            font-weight: 600;
+            font-size: 20px;
+            line-height: 29px;
+
+            text-transform: uppercase;
+            text-align: center;
+
+            margin-top: 10px;
+        }
+
+        @media --mobile-tablet{
+            &{
+                padding: 5px;
+                h3{
+                    font-size: 18px;
+                    line-height: 25px;
+                }
+            }
+            
+        }
+    }
+
+    .section__tabs{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        position: relative;
+        flex-wrap: inherit;
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        scroll-behavior: smooth;
+        -webkit-overflow-scrolling: touch;
+
+        margin-top: 10px;
+        padding-top: 20px;
+        padding-bottom: 30px;
+
+        &::after {
+            content: "";
+            width: 0;
+        }
+
+        .section-tab {
+            position: relative;
+            scroll-snap-align: start;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            padding-bottom: 0;
+
+            &:not(:last-of-type){
+                margin-right: 10px;
+            }
+
+            a{
+                span{
+                    font-weight: 600;
+                    font-size: 14px;
+                    line-height: 17px;
+
+                    color: rgb(var(--colo-foreground));
+                    padding: 10px 12px;
+                    width: 100%;
+
+                    background: #FFFFFF;
+                    
+                    border: 1px solid #000000;
+                    border-radius: 50px;
+                }
+            }
+        }
+
+    }
+
+}

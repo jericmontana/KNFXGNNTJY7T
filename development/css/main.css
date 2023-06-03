@@ -10,12 +10,14 @@
 @import 'component/marquee.css';
 @import 'component/image-ratio.css';
 @import 'component/lazy-image.css';
+@import 'component/section-header.css';
 
 @import 'section/header.css';
 @import 'section/benefits.css';
 @import 'section/hero.css';
 @import 'section/deals.css';
 @import 'section/vip-banner.css';
+@import 'section/collection-list.css';
 @import 'section/image-banner.css';
 
 

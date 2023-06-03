@@ -1,0 +1,26 @@
+.section__header{
+    --color-foreground: 0,0,0;
+
+    margin-bottom: 40px;
+
+    h2{
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 44px;
+
+        text-transform: capitalize;
+        text-align: center;
+
+        margin-bottom: 20px;
+    }
+
+    p{
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 17px;
+        text-align: center;
+
+        color: rgb(var(--color-foreground));
+
+    }
+}
