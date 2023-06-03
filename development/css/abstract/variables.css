@@ -9,8 +9,8 @@
     --color-background: var(--color-base-background-1);
 
     /*========== Font and typography ==========*/
-    --font-primary: Poppins;
-    --font-secondary: PTSerif;
+    --font-primary: Montserrat;
+    --font-secondary: Montserrat;
 
     --font-body-scale: 1;
     --font-body-family: var(--font-secondary);
@@ -23,7 +23,7 @@
     --font-heading-weight: 600;
 
     /*========== Page width ==========*/
-    --page-width: 120rem;
+    --page-width: 2000px;
 
     /*========== z index ==========*/
     --z-tooltip: 10;

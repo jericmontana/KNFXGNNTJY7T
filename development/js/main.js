@@ -49,4 +49,21 @@ export function main(){
     }
 
     customElements.define('sticky-header', StickyHeader);
+
+    class HeaderDrawer extends HTMLElement {
+        constructor() {
+            super();
+
+            this.body = document.querySelector('body');
+            this.toggle = this.querySelector('summary');
+
+            this.toggle.addEventListener('click', this.toggleClickHandler.bind(this));
+        }
+
+        toggleClickHandler(){
+            this.body.classList.toggle('no-scroll--mobile-tablet');
+        }
+    }
+
+    customElements.define('header-drawer', HeaderDrawer);
 }

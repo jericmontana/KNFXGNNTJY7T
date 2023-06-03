@@ -39,6 +39,16 @@ body {
     }
 }
 
+body.no-scroll--all{
+    overflow: hidden;
+}
+
+@media --mobile-tablet{
+    body.no-scroll--mobile-tablet{
+        overflow: hidden;
+    }
+}
+
 /* Remove list styles (bullet points) */
 ol, ul {
     list-style: none;
@@ -249,4 +259,15 @@ h6,
         transition: none !important;
         animation: none !important;
     }
+}
+
+/* base-details-summary */
+summary {
+  cursor: pointer;
+  list-style: none;
+  position: relative;
+}
+
+summary::-webkit-details-marker {
+  display: none;
 }

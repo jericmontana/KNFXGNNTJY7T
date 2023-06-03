@@ -3,21 +3,21 @@
 /* Primary Fonts */
 @font-face {
     font-family: 'Poppins';
-    src: url(Poppins-Regular.woff2);
+    src: url(assets/Poppins-Regular.woff2);
     font-style: normal;
     font-weight: 400;
     font-display: swap;
 }
 @font-face {
     font-family: 'Poppins';
-    src: url(Poppins-Medium.woff2);
+    src: url(assets/Poppins-Medium.woff2);
     font-style: normal;
     font-weight: 500;
     font-display: swap;
 }
 @font-face {
     font-family: 'Poppins';
-    src: url(Poppins-SemiBold.woff2);
+    src: url(assets/Poppins-SemiBold.woff2);
     font-style: normal;
     font-weight: 600;
     font-display: swap;
@@ -26,7 +26,7 @@
 /* Secondary Fonts */
 @font-face {
     font-family: 'PTSerif';
-    src: url(PTSerif-Regular.woff2);
+    src: url(assets/PTSerif-Regular.woff2);
     font-style: normal;
     font-weight: 400;
     font-display: swap;
@@ -34,7 +34,7 @@
 
 @font-face {
     font-family: 'PTSerif';
-    src: url(PTSerif-Bold.woff2);
+    src: url(assets/PTSerif-Bold.woff2);
     font-style: normal;
     font-weight: 700;
     font-display: swap;
@@ -43,21 +43,21 @@
 /* Montserrat */
 @font-face {
     font-family: 'Montserrat';
-    src: url(Montserrat-Regular.ttf);
+    src: url(assets/Montserrat-Regular.ttf);
     font-style: normal;
     font-weight: 400;
     font-display: swap;
 }
 @font-face {
     font-family: 'Montserrat';
-    src: url(Montserrat-Medium.ttf);
+    src: url(assets/Montserrat-Medium.ttf);
     font-style: normal;
     font-weight: 500;
     font-display: swap;
 }
 @font-face {
     font-family: 'Montserrat';
-    src: url(Montserrat-SemiBold.ttf);
+    src: url(assets/Montserrat-SemiBold.ttf);
     font-style: normal;
     font-weight: 600;
     font-display: swap;
@@ -65,7 +65,7 @@
 
 @font-face {
     font-family: 'Montserrat';
-    src: url(Montserrat-Bold.ttf);
+    src: url(assets/Montserrat-Bold.ttf);
     font-style: normal;
     font-weight: 700;
     font-display: swap;

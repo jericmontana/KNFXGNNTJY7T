@@ -1,9 +1,12 @@
 @import '../util/device.css';
+
 .header-wrapper{
     width: 100%;
     position: relative;
     transition: transform var(--duration-short) ease-in-out;
-    box-shadow: 0px 2px 8px -5px rgba(0, 0, 0, 0.75) ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .site-header-sticky.header-wrapper {
@@ -13,9 +16,210 @@
     left: 0%;
     z-index: 10;
     background-color: #fff;
+    box-shadow: 0px 2px 8px -5px rgba(0, 0, 0, 0.75) ;
 }
 
 .site-header-hidden.header-wrapper {
     transform: translateY(-100%);
 }
 
+header.header{
+    position: relative;
+    width: 100%;
+
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Header Menu */
+.header__menu{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+    .header__menu-list{
+        display: inline-flex;
+        flex-wrap: nowrap;
+    }
+
+    .header_menu-list--item{
+        font-size: 14px;
+        line-height: 17px;
+
+        display: flex;
+        align-items: center;
+        text-align: center;
+        text-transform: uppercase;
+
+        
+
+        &.header_menu-list--active-item{
+            font-weight: 700;
+        }
+
+        a{
+            padding: 2px;
+        }
+
+        @media --desktop{
+            &:not(:first-child){
+                padding-left: 20px;
+            }
+        }
+        
+    }
+}
+
+/* Heade Logo */
+.header__logo{
+    .header__logo-link{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        width: 100%;
+        max-width: 195px;
+        margin-left: auto;
+        margin-right: auto;
+
+        img{
+            object-fit: cover;
+            object-position: center;
+        }
+
+        @media --mobile{
+            &{
+                max-width: 120px;
+            }
+        }
+    }
+}
+
+/* Header Icons */
+.header__icons{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    .header__icons-list{
+        display: inline-flex;
+        flex-wrap: nowrap;
+    }
+
+    .header__icons-list--item{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+
+        &:not(:last-child){
+            padding-right: 20px;
+        }
+
+        @media --mobile{
+            &:not(:last-child){
+                padding-right: 8px;
+            } 
+        }
+
+    }
+    
+}
+
+.header__icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2px;
+
+    .icon{
+        height: auto;
+        width: 20px;
+    }
+}
+
+/* Header Drawer */
+.header__drawer-menu{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 100%;
+
+    .menu-drawer__inner-container{
+        position: relative;
+        height: 100%;
+
+        display: grid;
+        grid-template-rows: 1fr auto;
+        align-content: space-between;
+        overflow-y: auto;
+    }
+
+    .header__menu{
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    
+        .header__menu-list{
+            display: inline-flex;
+            flex-direction: column;
+        }
+
+        .header_menu-list--item {
+            &:not(:first-child){
+                padding-top: 20px;
+            }
+        }
+    }
+
+    .header__icon{
+        overflow: hidden;
+        span{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+
+    details{
+        .icon.icon-close{
+            display: none;
+        }
+
+        &[open]{
+            .icon.icon-hamburger{
+                display: none;
+            }
+            .icon.icon-close{
+                display: block;
+            }
+        }
+    }
+
+    .header__menu-drawer{
+        transition: transform var(--duration-default) ease;
+        position: absolute;
+        transform: translateX(-100%);
+        visibility: hidden;
+        z-index: 0;
+        left: 0;
+        top: 100%;
+        width: calc(100% - 4rem);
+        padding: 0;
+        overflow-x: hidden;
+        padding-top: 15px;
+        opacity: 0;
+    }
+
+    details[open] > .header__menu-drawer{
+        transform: translate(0%);
+        visibility: visible;
+        opacity: 1;
+        z-index: 3;
+    }
+    
+}
