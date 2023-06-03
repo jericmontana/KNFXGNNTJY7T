@@ -1,0 +1,67 @@
+@import '../util/device.css';
+#section--featuredcollection{
+    .image-ratio__container{
+        .image-ratio{
+            &::before {
+                padding-bottom: 133.33%;
+            }
+        }
+    }
+
+
+    .grid-item-wrapper{
+        padding: 15px;
+        position: relative;
+
+        @media --mobile-tablet{
+            &{
+                padding: 5px;
+            }
+        }
+
+        a{
+            position: absolute;
+            display: block !important;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+        }
+
+        h3{
+            width: 100%;
+
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 17px;
+            text-transform: capitalize;
+
+            margin-top: 10px;
+        }
+
+        .price{
+            .price--sale{
+                font-weight: 600;
+                font-size: 14px;
+                line-height: 17px;
+
+                text-transform: capitalize;
+                color: #C1272D;
+            }
+
+            .price--regular{
+                font-weight: 600;
+                font-size: 14px;
+                line-height: 17px;
+
+                text-transform: capitalize;
+                color: #000000;
+            }
+
+            .price--sale + .price--regular{
+                margin-left: 15px;
+                text-decoration-line: line-through;
+            }
+        }
+    }
+}
