@@ -275,19 +275,20 @@ summary::-webkit-details-marker {
 
 /* Section */
 
-.section + .section {
-    margin-top: var(--spacing-sections-mobile);
-}
-  
-@media --tablet-up {
-    .section + .section {
-        margin-top: var(--spacing-sections-desktop);
-    }
-}
-
 .section{
+    position: relative;
+    width: 100%;
+    max-width: var(--section-max-width);
+    margin-left: auto;
+    margin-right: auto;
+
     padding-top: var(--spacing-sections-mobile);
     padding-bottom: var(--spacing-sections-mobile);
+}
+
+.section.section--no-padding{
+    padding-top: 0px;
+    padding-bottom: 0px;
 }
 
 @media --tablet-up {
@@ -295,4 +296,25 @@ summary::-webkit-details-marker {
         padding-top: var(--spacing-sections-desktop);
         padding-bottom: var(--spacing-sections-desktop);
     }
+
+    .section.section--no-padding{
+        padding-top: 0px;
+        padding-bottom: 0px;
+    }
+}
+
+
+.section .page-width{
+    position: relative;
+    background-color: transparent;
+}
+
+.section .section-background{
+    position: absolute;
+    display: block !important;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
 }

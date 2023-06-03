@@ -1,0 +1,47 @@
+.marquee{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+
+    overflow: hidden;
+
+    &:hover .marquee-item-wrapper{
+        animation-play-state: paused;
+    }
+
+    .marquee-item-wrapper{
+        display: flex;
+        flex: 1 1 auto;
+
+        column-gap: 80px;
+
+        padding-left: 80px;
+
+        width: max-content;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+        animation-duration: 20s;
+        animation-play-state: running;
+    }
+
+    .marquee__item{
+        white-space: nowrap;
+    }
+}
+
+.marquee.marquee--left{
+    .marquee-item-wrapper{
+        animation-name: marquee-left;
+    }
+}
+
+@keyframes marquee-left {
+    0% {
+      transform: translate3d(0, 0, 0);
+      visibility: visible;
+    }
+    100% {
+      transform: translate3d(-100%, 0, 0);
+    }
+}

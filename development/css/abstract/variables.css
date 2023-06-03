@@ -24,6 +24,7 @@
 
     /*========== Page width ==========*/
     --page-width: 2000px;
+    --section-max-width: 2500px;
 
     /*========== z index ==========*/
     --z-tooltip: 10;

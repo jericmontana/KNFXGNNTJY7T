@@ -1,5 +1,11 @@
 @import '../util/device.css';
 
+.section.header-wrapper{
+    padding: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
 .header-wrapper{
     width: 100%;
     position: relative;
