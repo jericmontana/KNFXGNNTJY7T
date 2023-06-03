@@ -10,6 +10,7 @@
 @import 'component/marquee.css';
 @import 'component/image-ratio.css';
 @import 'component/lazy-image.css';
+@import 'component/form-fields.css';
 @import 'component/section-header.css';
 
 @import 'section/header.css';
@@ -21,6 +22,7 @@
 @import 'section/featured-collection.css';
 @import 'section/image-banner.css';
 @import 'section/instafeed.css';
+@import 'section/newsletter.css';
 
 
 
