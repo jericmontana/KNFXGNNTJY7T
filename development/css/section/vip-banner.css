@@ -23,7 +23,7 @@
             @media --mobile{
                 .image-ratio{
                     &::before {
-                        padding-bottom: 40%;
+                        padding-bottom: max(250px, 40%);
                     }
                 }
             }
