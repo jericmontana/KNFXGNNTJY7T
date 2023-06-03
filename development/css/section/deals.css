@@ -1,0 +1,56 @@
+@import '../util/device.css';
+
+#section--deals{
+
+    --grid-mobile-vertical-spacing: 20px;
+    --grid-desktop-vertical-spacing: 20px;
+    --grid-desktop-horizontal-spacing: 20px;
+    --color-foreground: 0,0,0;
+    
+    .deals-wrapper{
+        display: grid;
+        align-items: center;
+
+        @media --tablet-up{
+            grid-template-columns: 1fr auto;
+        }
+        .grid{
+            height: 100%;
+        }
+
+        .grid__item{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            h2{
+                font-weight: 600;
+                font-size: 30px;
+                text-align: center;
+            }
+            p{
+                font-weight: 400;
+                font-size: 10px;
+                line-height: 12px;
+                text-transform: uppercase;
+                text-align: center;
+                color: rgb(var(--color-foreground));
+            }
+        }
+
+    }
+
+    .section__cta{
+        width: 100%;
+        padding: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        @media --tablet-up{
+            &{
+                justify-content: flex-end;
+            }
+        }
+    }
+}

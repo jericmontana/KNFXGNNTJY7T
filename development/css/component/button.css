@@ -35,6 +35,17 @@
     }
 }
 
+.btn--secondary{
+    border: var(--border-weight) solid rgb(var(--btn-lbl-color));
+    background-color: rgb(var(--btn-lbl-color));
+    
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+    span{
+        color: rgb(var(--btn-bg-color));
+    }
+}
+
 .btn-size--hero{
     width: 100%;
     max-width: 300px;
@@ -88,14 +99,19 @@
 
 .btn-size--default{
     width: 100%;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 2px 12px;
+    max-width: max-content;
+    min-width: max-content;
+    padding: 10px 12px;
+
+    span{
+        font-size: 15px;
+        line-height: 15px;
+        text-transform: uppercase;
+    }
 
     @media --mobile{
         &{
-            font-size: 12px;
-            padding: 5px 8px 2px 8px;
+            max-width: 100%;
         }
     }
 }
