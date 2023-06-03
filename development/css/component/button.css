@@ -66,6 +66,26 @@
     }
 }
 
+.btn-size--imagebanner{
+    width: 100%;
+    max-width: 150px;
+    height: 42px;
+
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+
+    span{
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 22px;
+
+        text-transform: uppercase;
+    }
+
+  
+}
+
 .btn-size--default{
     width: 100%;
     margin-left: auto;
